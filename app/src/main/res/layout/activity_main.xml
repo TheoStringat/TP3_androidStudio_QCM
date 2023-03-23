@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/num_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="48dp"
+        android:text="Question n°1/20"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contenu_question"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Ici le texte qui présente le contexte sur lequel portent les questions"
+        android:textColor="@color/purple_200"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/num_question"
+        app:layout_constraintTop_toBottomOf="@+id/num_question" />
+
+    <TextView
+        android:id="@+id/texte_cocher_cases"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Cochez ci-dessous les énoncés que vous pensez vrais"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/contenu_question"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/contenu_question"
+        app:layout_constraintTop_toBottomOf="@+id/contenu_question" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Choix 1"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/texte_cocher_cases"
+        app:layout_constraintTop_toBottomOf="@+id/texte_cocher_cases" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Choix 2"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/texte_cocher_cases"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox1" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Choix 3"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/texte_cocher_cases"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Choix 4"
+        android:textColor="@color/purple_500"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/texte_cocher_cases"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNoChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Aucun des choix ci-dessus"
+        android:textColor="@color/purple_500"
+        android:checked="true"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/texte_cocher_cases"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4"/>
+
+    <Button
+        android:id="@+id/button_validation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Valider vos choix"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
